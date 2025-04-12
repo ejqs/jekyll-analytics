@@ -1,7 +1,7 @@
 class CounterDotDev
     def initialize(config)
         if config['tracking_script'].nil?
-            raise ArgumentError, 'Please use your counter.dev "user"'
+            raise ArgumentError, 'Please use your counter.dev "tracking_script"'
         end
         @tracking_script = config['tracking_script']
     end
