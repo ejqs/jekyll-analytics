@@ -83,7 +83,7 @@ jekyll_analytics:
   CounterDotDev:
     data_id: "uuid" # Found in the tracking code/script when you add a website in CounterDotDev
     source: "https://cdn.counter.dev/script.js" # The source of the javascript
-    data_utc_offset: 8
+    data_utc_offset: "8"
 
   PostHog:
     url: "https://us.i.posthog.com" # Required - replace with the url of post hog analytics
