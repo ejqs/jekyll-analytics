@@ -13,14 +13,14 @@ class TestCounterDotDev < Test::Unit::TestCase
 
     def test_default_tracking_string
         counterDotDev = CounterDotDev.new({
-            "source" => "https://cdn.counter.dev/script.js",
+            "source" => "https://different.counter.dev/script.js",
             "data_id" => "00000-000000",
             "data_utc_offset" => "2"
         })
         assert_equal(counterDotDev.render(), 
 """
     <!-- Counter.dev Analytics -->
-    <script src=\"https://cdn.counter.dev/script.js\" data-id=\"00000-000000\" data-utcoffset=\"2\"></script>
+    <script src=\"https://different.counter.dev/script.js\" data-id=\"00000-000000\" data-utcoffset=\"2\"></script>
     <!-- End Counter.dev Analytics  -->
 """)
     end
